@@ -4,7 +4,7 @@
     <flexbox :gutter="2">
       <flexbox-item v-for="(item, index) in remdList1" :key="index" @click.native="selectItem(item)">
         <div class="stance">
-          <img v-lazy="item.img">
+          <img v-lazy="`${item.img}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp`">
         </div>
         <p class="remd-text" v-text="item.name"></p>
         <span class="playCount"><i class="fa fa-headphones"></i><span v-text="item.playCount"></span></span>
@@ -13,7 +13,7 @@
     <flexbox :gutter="2">
       <flexbox-item v-for="(item, index) in remdList2" :key="index" @click.native="selectItem(item)">
         <div class="stance">
-          <img v-lazy="item.img">
+          <img v-lazy="`${item.img}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp`">
         </div>
         <p class="remd-text" v-text="item.name"></p>
         <span class="playCount"><i class="fa fa-headphones"></i><span v-text="item.playCount"></span></span>

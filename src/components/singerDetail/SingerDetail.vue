@@ -47,7 +47,7 @@ export default {
       return this.singer.alias ? this.singer.alias.length !== 0 ? this.singer.name + ' (' + this.singer.alias[0] + ')' : this.singer.name : ''
     },
     singerBg: function () {
-      return `background-image:url(${this.singer.picUrl})`
+      return `background-image:url(${this.singer.picUrl}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp)`
     }
   },
   components: {

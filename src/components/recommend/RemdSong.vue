@@ -3,7 +3,7 @@
     <h2 class="title">最新音乐</h2>
     <group>
       <CellBox v-for="(item,index) in remdSong" :key="index" @click.native="selectItem(item, index)">
-        <img v-lazy="item.picUrl" class="img">
+        <img v-lazy="`${item.picUrl}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp`" class="img">
         <div class="music">
           <div class="name ellipsis"><span class="songName" v-text="item.songName"></span><span class="alias" v-if="item.alias.length!==0">（{{item.alias[0]}}）</span></div>
           <div class="singer ellipsis">

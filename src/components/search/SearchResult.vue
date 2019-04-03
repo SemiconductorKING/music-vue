@@ -9,7 +9,7 @@
     <group>
       <cell-box v-show="searchResult.length" v-for="(item, index) in singerList" @click.native="openSinger(item)" :key="'singer'+index" :link="{path:'/singer/'+item.id}">
         <div class="icon">
-          <img v-lazy="item.img1v1Url" width="50" height="50">
+          <img v-lazy="`${item.img1v1Url}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp`" width="50" height="50">
         </div>
         <div class="content artists">
           <div class="name">歌手：{{item.name}}</div>

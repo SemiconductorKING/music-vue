@@ -5,7 +5,7 @@
       <div class="cloud">
         <div class="official" v-for="(item, index) in rankOfficialData" @click="selectItem(item)" :key="index">
           <div class="cover">
-            <img v-lazy="item.coverImgUrl">
+            <img v-lazy="`${item.coverImgUrl}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp`">
           </div>
           <ol class="preview">
             <li v-for="(song, index2) in item.tracks.slice(0,3)" :key="index2">
@@ -22,7 +22,7 @@
       <h2 class="title">全球榜</h2>
       <div class="global">
         <div class="wrap" v-for="(item, index) in rankGlobalData" @click="selectItem(item)" :key="index">
-          <img v-lazy="item.coverImgUrl">
+          <img v-lazy="`${item.coverImgUrl}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp`">
           <p>{{item.name}}</p>
         </div>
         <div class="wrap"></div>

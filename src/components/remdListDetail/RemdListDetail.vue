@@ -7,7 +7,7 @@
       </div>
       <div class="remdList-info">
         <div class="pic">
-          <img :src="remdList.img" width="120" height="120">
+          <img :src="`${remdList.img}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp`" width="120" height="120">
         </div>
         <div class="disc">
           <div class="title">{{this.title}}</div>

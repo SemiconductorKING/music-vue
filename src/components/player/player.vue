@@ -28,7 +28,7 @@
             <div class="disc" ref="disc">
               <div class="rotate" :class="rotate">
                 <img src="../../assets/images/disc.png" class="disc-img">
-                <img :src="currentsong.picUrl" class="disc-cover">
+                <img :src="`${currentsong.picUrl}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp`" class="disc-cover">
               </div>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default {
       return this.mode === playMode.sequence ? 'icon-circle' : this.mode === playMode.loop ? 'icon-single' : 'icon-random'
     },
     imgUrl () {
-      return `background-image:url(${this.currentsong.picUrl})`
+      return `background-image:url(${this.currentsong.picUrl}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp)`
     },
     rotate () {
       return this.playing ? 'play' : 'play pause'

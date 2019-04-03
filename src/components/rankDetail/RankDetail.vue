@@ -44,7 +44,7 @@ export default {
       'playing'
     ]),
     rankBg: function () {
-      return this.rankList.creator ? `background-image:url(${this.rankList.creator.backgroundUrl})` : ''
+      return this.rankList.creator ? `background-image:url(${this.rankList.creator.backgroundUrl}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp)` : ''
     }
   },
   components: {

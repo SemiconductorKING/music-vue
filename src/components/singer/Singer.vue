@@ -27,7 +27,7 @@
           </div>
           <!-- 歌手头像 -->
           <div class="avatar">
-            <img v-lazy="item.img1v1Url">
+            <img v-lazy="`${item.img1v1Url}?imageView&thumbnail=246x0&quality=75&tostatic=0&type=webp`">
           </div>
           <div class="describe">
             <h4 class="name" v-text="item.name"></h4>
