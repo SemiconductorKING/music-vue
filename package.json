@@ -2,7 +2,7 @@
   "name": "vue-music",
   "version": "1.0.0",
   "description": "vue音乐播放器",
-  "author": "TothingWay <200846290@qq.com>",
+  "author": "SemiconductorKING <2572422025qq@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
